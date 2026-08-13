@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -7,128 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Portfolio</title>
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Prevents browser from requesting a missing favicon -->
+    <link rel="icon" href="data:,">
 </head>
 
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
 
         <h1>Priyanshu Jain</h1>
 
         <p>Computer Science Student | Web Developer</p>
+
+        <!-- Main navigation links -->
         <nav>
-
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-
-</nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
     </header>
-    <main>  
 
-    <section id="about">
 
-        <h2>About Me</h2>
-        <img
-    src="images/profile.png"
-    alt="Profile picture of Priyanshu Jain"
-    width="200"
->
+    <main>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <!-- Profile image -->
+            <img
+                src="images/profile.png"
+                alt="Profile picture of Priyanshu Jain"
+                width="200"
+            >
+
+            <p>
+                Hello! I am Priyanshu Jain, a Computer Science student
+                interested in web development and technology.
+            </p>
+
+            <p>
+                I am currently learning HTML, CSS, JavaScript and
+                full-stack web development.
+            </p>
+
+            <!-- Social profile links -->
+            <p>
+                Connect with me:
+
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+
+                |
+
+                <a href="https://www.linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <!-- List of technical skills -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <!-- Name field -->
+                <label for="name">Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <!-- Email field -->
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Message field -->
+                <label for="message">Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+
+                <!-- Submit button -->
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
 
         <p>
-            Hello! I am Priyanshu Jain, a Computer Science student
-            interested in web development and technology.
+            © 2026 Priyanshu Jain. All rights reserved.
         </p>
 
-        <p>
-            I am currently learning HTML, CSS, JavaScript and
-            full-stack web development.
-        </p>
-        <p>
-    Connect with me:
-    
-    <a href="https://github.com/" target="_blank">
-        GitHub
-    </a>
-    
-    |
-    
-    <a href="https://www.linkedin.com/" target="_blank">
-        LinkedIn
-    </a>
-</p>
-
-    </section>
-    <section id="skills">
-
-    <h2>My Skills</h2>
-
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Git & GitHub</li>
-    </ul>
-
-</section>
-<section id="contact">
-
-    <h2>Contact Me</h2>
-
-    <form>
-
-        <label for="name">Name:</label>
-        <input 
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
-        >
-
-        <br><br>
-
-        <label for="email">Email:</label>
-        <input 
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-        >
-
-        <br><br>
-
-        <label for="message">Message:</label>
-        <br>
-
-        <textarea
-            id="message"
-            name="message"
-            rows="5"
-            cols="40"
-            placeholder="Enter your message"
-            required
-        ></textarea>
-
-        <br><br>
-
-        <button type="submit">Send Message</button>
-
-    </form>
-
-</section>
-</main>
-<footer>
-
-    <p>
-        © 2026 Priyanshu Jain. All rights reserved.
-    </p>
-
-</footer>
+    </footer>
 
 </body>
 

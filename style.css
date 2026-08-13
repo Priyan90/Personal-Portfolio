@@ -1,0 +1,405 @@
+/* =========================================================
+   PERSONAL PORTFOLIO WEBSITE
+   Week 2 - CSS Styling
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESET
+   Removes default browser spacing and makes sizing easier.
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   2. BODY
+   Basic font, colors and page background.
+   ========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. HEADER
+   Contains the name and short introduction.
+   ========================================================= */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   4. NAVIGATION
+   Styles the main navigation links.
+   ========================================================= */
+
+nav {
+    margin-top: 20px;
+
+    /* Flexbox keeps navigation items organized */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+
+    /* Makes hover animation smooth */
+    transition: 0.3s ease;
+}
+
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   5. MAIN CONTENT
+   Keeps the content centered and readable.
+   ========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* =========================================================
+   6. COMMON SECTION CARD
+   Applies common styling to About, Skills and Contact.
+   ========================================================= */
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    /* Adds a subtle card shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1f2937;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   7. ABOUT SECTION
+   Styles the profile image and introduction text.
+   ========================================================= */
+
+#about img {
+    display: block;
+
+    width: 180px;
+    height: 180px;
+
+    /* Makes the profile image circular */
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    /* Centers the image */
+    margin: 20px auto;
+}
+
+#about p {
+    margin-bottom: 12px;
+}
+
+
+/* About section links */
+#about a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+#about a:hover {
+    color: #0369a1;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   8. SKILLS SECTION
+   Flexbox is used to arrange skills.
+   ========================================================= */
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    list-style: none;
+}
+
+#skills li {
+    background-color: #1f2937;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+
+/* Skill hover effect */
+#skills li:hover {
+    background-color: #0284c7;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   9. CONTACT FORM
+   Arranges form elements vertically using Flexbox.
+   ========================================================= */
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact label {
+    font-weight: bold;
+    color: #374151;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    background-color: #ffffff;
+
+    transition: 0.3s ease;
+}
+
+#contact textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+/* Input focus effect */
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+}
+
+/* Contact button */
+#contact button {
+    width: fit-content;
+    padding: 12px 22px;
+
+    background-color: #1f2937;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0284c7;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   12. FOOTER
+   Contains copyright information.
+   ========================================================= */
+
+footer {
+    background-color: #1f2937;
+    color: white;
+
+    text-align: center;
+
+    padding: 22px 15px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   13. TABLET / MOBILE RESPONSIVE DESIGN
+   Applies when screen width is 768px or smaller.
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Smaller header */
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+
+    /* Stack navigation links vertically */
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    /* Reduce main content spacing */
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+
+    /* Smaller section padding */
+    section {
+        padding: 22px;
+    }
+
+
+    section h2 {
+        font-size: 23px;
+    }
+
+
+    /* Smaller profile image */
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* Stack skills vertically */
+    #skills ul {
+        flex-direction: column;
+    }
+
+    #skills li {
+        text-align: center;
+    }
+
+
+    /* Full-width button on smaller screens */
+    #contact button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   14. SMALL MOBILE DEVICES
+   Applies to very small screens.
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+
+    main {
+        width: 95%;
+    }
+
+
+    section {
+        padding: 18px;
+    }
+
+
+    section h2 {
+        font-size: 21px;
+    }
+
+
+    #about img {
+        width: 125px;
+        height: 125px;
+    }
+
+
+    #contact input,
+    #contact textarea {
+        font-size: 14px;
+    }
+
+
+    footer {
+        font-size: 14px;
+    }
+}
