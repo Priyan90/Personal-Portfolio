@@ -49,3 +49,35 @@ Personal-Portfolio/
     ├── html-code.png
     ├── console-test.png
     └── validation.png
+
+
+The Week 2 task focused mainly on:
+
+- CSS styling
+- CSS selectors
+- Box model
+- Flexbox
+- Hover and focus effects
+- Form styling
+- Responsive design
+- Code readability and comments
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Visual Studio Code
+- Google Chrome
+- Chrome DevTools
+
+## 📂 Project Structure
+
+```text
+Personal-Portfolio/
+│
+├── index.html
+├── style.css
+├── images/
+│   └── profile.png
+│
+└── screenshots/
