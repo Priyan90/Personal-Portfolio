@@ -81,3 +81,82 @@ Personal-Portfolio/
 │   └── profile.png
 │
 └── screenshots/
+
+
+Week 3 – JavaScript & Interactivity
+
+This project is a personal portfolio website created as part of my internship task.
+
+In Week 3, JavaScript was added to make the previously created portfolio website interactive and dynamic.
+
+---
+
+## 📌 Project Overview
+
+The portfolio website contains:
+
+- About Me section
+- Skills section
+- Contact form
+- GitHub and LinkedIn links
+- Navigation menu
+- Interactive JavaScript features
+- Dark/Light Mode
+- Form validation
+
+The main focus of Week 3 was to add JavaScript functionality and improve user interaction.
+
+---
+
+## 🎯 Objectives
+
+The objectives of this task were:
+
+- Create and connect an external JavaScript file.
+- Add interactive features to the website.
+- Implement form validation.
+- Display error messages for invalid inputs.
+- Practice DOM manipulation.
+- Use JavaScript event listeners.
+- Implement Show/Hide functionality.
+- Implement Dark/Light Mode.
+- Store theme preference using LocalStorage.
+- Add live character counting.
+- Test and debug the website.
+- Maintain readable and well-commented code.
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- Chrome Browser
+- Chrome DevTools
+- LocalStorage API
+
+---
+
+## 📁 Project Structure
+
+```text
+Personal-Portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+│
+├── images/
+│   └── profile.png
+│
+└── screenshots/
+    ├── 01-portfolio.png
+    ├── 02-about-toggle.png
+    ├── 03-form-validation.png
+    ├── 04-form-success.png
+    ├── 05-dark-mode.png
+    ├── 06-light-mode.png
+    └── 07-console.png
