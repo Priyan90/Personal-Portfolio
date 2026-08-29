@@ -10,32 +10,44 @@
     <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Prevents browser from requesting a missing favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="data:,">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ==========================================
+         HEADER SECTION
+         ========================================== -->
+
     <header>
 
         <h1>Priyanshu Jain</h1>
 
         <p>Computer Science Student | Web Developer</p>
 
-        <!-- Main navigation links -->
+        <!-- Navigation menu -->
         <nav>
+
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+
         </nav>
 
     </header>
 
 
+    <!-- ==========================================
+         MAIN CONTENT
+         ========================================== -->
+
     <main>
 
-        <!-- ================= ABOUT SECTION ================= -->
+        <!-- ==========================================
+             ABOUT SECTION
+             ========================================== -->
+
         <section id="about">
 
             <h2>About Me</h2>
@@ -47,99 +59,140 @@
                 width="200"
             >
 
-            <p>
-                Hello! I am Priyanshu Jain, a Computer Science student
-                interested in web development and technology.
-            </p>
+            <!-- About content that can be shown/hidden -->
+            <div id="aboutContent">
 
-            <p>
-                I am currently learning HTML, CSS, JavaScript and
-                full-stack web development.
-            </p>
+                <p>
+                    Hello! I am Priyanshu Jain, a Computer Science student
+                    interested in web development and technology.
+                </p>
 
-            <!-- Social profile links -->
-            <p>
-                Connect with me:
+                <p>
+                    I am currently learning HTML, CSS, JavaScript and
+                    full-stack web development.
+                </p>
 
-                <a href="https://github.com/" target="_blank">
-                    GitHub
-                </a>
+                <!-- Social links -->
+                <p>
+                    Connect with me:
 
-                |
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
 
-                <a href="https://www.linkedin.com/" target="_blank">
-                    LinkedIn
-                </a>
-            </p>
+                    |
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </p>
+
+            </div>
+
+            <!-- Show/Hide About button -->
+            <button type="button" id="aboutToggle">
+                Hide About
+            </button>
 
         </section>
 
 
-        <!-- ================= SKILLS SECTION ================= -->
+        <!-- ==========================================
+             SKILLS SECTION
+             ========================================== -->
+
         <section id="skills">
 
             <h2>My Skills</h2>
 
-            <!-- List of technical skills -->
             <ul>
+
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>React.js</li>
                 <li>Node.js</li>
                 <li>Git &amp; GitHub</li>
+
             </ul>
 
         </section>
 
 
-        <!-- ================= CONTACT SECTION ================= -->
+        <!-- ==========================================
+             CONTACT SECTION
+             ========================================== -->
+
         <section id="contact">
 
             <h2>Contact Me</h2>
 
-            <form>
+            <!-- Contact form -->
+            <form id="contactForm">
 
                 <!-- Name field -->
-                <label for="name">Name:</label>
+                <label for="name">
+                    Name:
+                </label>
 
                 <input
                     type="text"
                     id="name"
                     name="name"
                     placeholder="Enter your name"
-                    required
                 >
+
+                <!-- Name error message -->
+                <small id="nameError"></small>
 
 
                 <!-- Email field -->
-                <label for="email">Email:</label>
+                <label for="email">
+                    Email:
+                </label>
 
                 <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Enter your email"
-                    required
                 >
+
+                <!-- Email error message -->
+                <small id="emailError"></small>
 
 
                 <!-- Message field -->
-                <label for="message">Message:</label>
+                <label for="message">
+                    Message:
+                </label>
 
                 <textarea
                     id="message"
                     name="message"
                     rows="5"
                     placeholder="Enter your message"
-                    required
                 ></textarea>
+
+                <!-- Message error -->
+                <small id="messageError"></small>
 
 
                 <!-- Submit button -->
                 <button type="submit">
                     Send Message
                 </button>
+
+                <!-- Success message -->
+                <p id="successMessage"></p>
 
             </form>
 
@@ -148,14 +201,25 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ==========================================
+         FOOTER SECTION
+         ========================================== -->
+
     <footer>
 
         <p>
-            © 2026 Priyanshu Jain. All rights reserved.
+            &copy; 2026 Priyanshu Jain. All rights reserved.
         </p>
 
     </footer>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 
