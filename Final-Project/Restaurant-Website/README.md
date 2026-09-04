@@ -44,3 +44,11 @@ restaurant-website/
 ├── style.css
 ├── script.js
 ├── README.md
+└── images/
+        ├── hero.jpg
+        ├── menu1.png
+        ├── menu2.png
+        ├── menu3.png
+        ├── menu4.png
+        ├── menu5.jpeg
+        └── menu6.jpeg
